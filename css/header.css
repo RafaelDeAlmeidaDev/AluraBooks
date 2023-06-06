@@ -1,17 +1,17 @@
-
-
-.cabecalho{
+.cabecalho {
     background-color: var(--cor-back-ground);
-    
+    position: relative;
+
 }
 
-.cabecalho__menu{
+.cabecalho__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.menu_hamburguer{
+.menu_hamburguer {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -22,11 +22,50 @@
 
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem{
+.container__imagem {
+    padding: 0.5em;
+}
+
+.container__botao,
+.lista_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+
+}
+
+.container__botao:checked~.lista_menu {
+    display: block;
+}
+
+.lista_menu {
+    background-color: var(--cor-back-ground);
+    width: 60vw;
+}
+
+.lista_menu__item__link,
+.lista_menu__item__titulo {
+    display: block;
     padding: 1em;
+    
+
+}
+
+.lista_menu__item__titulo {
+    color: var(--cor-laranja);
+    font-weight: 700;
+    
+}
+
+.lista_menu__item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--azul-degrade);
+    
+    
 }
