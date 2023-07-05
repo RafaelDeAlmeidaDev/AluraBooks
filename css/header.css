@@ -118,4 +118,13 @@
     .container_imagem_tirar{
         display: none;
     }
+
+    .menu-opcoes:checked ~ .opcoes-menu-categoria{
+        display: block;
+        width: auto;
+    }
+
+    .menu-opcoes{
+        display: none;
+    }
 }
