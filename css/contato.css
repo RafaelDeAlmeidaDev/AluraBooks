@@ -29,3 +29,16 @@
 .contato__input::placeholder{
     color: var(--azul-degrade);
 }
+
+@media (min-width:1024px){
+    .contato__input{
+        width: 30%;
+        margin: 4em;
+        text-align: center;
+        background-position: 6.5em;
+    }
+
+    .contato__titulo{
+        font-size: 1.5em;
+    }
+}

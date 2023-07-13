@@ -16,6 +16,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
 }
 
 .topicos__lista__item{
@@ -30,4 +31,11 @@
     font-weight: 700;
     font-size: 0.8em;
 
+}
+
+@media (min-width:1024px){
+
+    .topicos{
+        font-size: 1.5em;
+    }
 }
