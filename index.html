@@ -11,7 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+Mono:wght@400;500;600;700;800;900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+Mono:wght@400;500;600;700;800;900&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" media="screen" href="css/style.css">
@@ -47,14 +49,22 @@
                     <li class="lista_menu__item"><a class="lista_menu__item__link" href="">BUSINESS</a></li>
                     <li class="lista_menu__item"><a class="lista_menu__item__link" href="">DESIGN & UX</a></li>
                 </ul>
-                
+
                 <li class="opcoes__item"><a href="" class="opcoes__item__link">FAVORITOS</a></li>
                 <li class="opcoes__item"><a href="" class="opcoes__item__link">MINHA</a> ESTANTE</li>
             </ul>
             <div class="container">
-                <a href=""><img src="img/Favoritos.svg" alt="Ícone de favoritos" class="container__imagem container_imagem_tirar"></a>
-                <a href=""><img src="img/Compras.svg" alt="Ícone de compras" class="container__imagem"></a>
-                <a href=""><img src="img/Usuario.svg" alt="ìcone de perfil" class="container__imagem"></a>
+                <a class="container__imagem container_imagem_tirar" href="">
+                    <img class="container_link" src="img/Favoritos.svg" alt="Ícone de favoritos">
+                </a>
+                <a class="container_link" href="">
+                    <img src="img/Compras.svg" alt="Ícone de compras" class="container__imagem">
+                    <p class="container_link__texto">Minha sacola</p>
+                </a>
+                <a class="container_link" href="">
+                    <img src="img/Usuario.svg" alt="ìcone de perfil" class="container__imagem">
+                    <p class="container_link__texto">Meu perfil</p>
+                </a>
             </div>
         </nav>
     </header>
@@ -87,36 +97,37 @@
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+            </div>
 
 
-                <div class="card">
-                    <div class="card__descricao">
-                        <div>
-                            <h3 class="card__descricao__titulo">Talvez você também se interesse por...</h3>
-                            <h4 class="card__descricao__titulo_descricao">Angular 11 e Firebase</h4>
-                            <p class="card__descricao__texto">Construindo uma aplicação integrada com a plataforma do
-                                Google.</p>
-                        </div>
-
-                        <img src="img/Angular.svg" alt="Imagem ilustrativa do Angular">
+            <div class="card">
+                <div class="card__descricao">
+                    <div>
+                        <h3 class="card__descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h4 class="card__descricao__titulo_descricao">Angular 11 e Firebase</h4>
+                        <p class="card__descricao__texto">Construindo uma aplicação integrada com a plataforma do
+                            Google.</p>
                     </div>
 
+                    <img src="img/Angular.svg" alt="Imagem ilustrativa do Angular">
+                </div>
 
-                    <div class="card_botoes">
-                        <ul class="card_botoes_icones">
-                            <li><img src="img/Favoritos.svg" alt="link de favorito"></li>
-                            <li><img src="img/Compras.svg" alt="link de compra"></li>
-                        </ul>
 
-                        <a class="card_botoao_ancora" href="">
-                            Saiba mais
-                        </a>
+                <div class="card_botoes">
+                    <ul class="card_botoes_icones">
+                        <li><img src="img/Favoritos.svg" alt="link de favorito"></li>
+                        <li><img src="img/Compras.svg" alt="link de compra"></li>
+                    </ul>
 
-                    </div>
+                    <a class="card_botoao_ancora" href="">
+                        Saiba mais
+                    </a>
+
+                </div>
 
             </div>
 
-            </div>
+
         </section>
         <section class="carrosel">
             <h2 class="carrosel__titulo">MAIS VENDIDOS</h2>
@@ -140,44 +151,45 @@
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+            </div>
 
-
-                <div class="card">
-                    <div class="card__descricao">
-                        <div>
-                            <h3 class="card__descricao__titulo">Autora do Mês</h3>
-                            <h4 class="card__descricao__titulo_descricao">Juliana Agarikov</h4>
-                            <p class="card__descricao__texto">Construindo uma aplicação integrada com a plataforma do
-                                Google.</p>
-                        </div>
-
-                        <img src="img/Perfil-escritora 1.svg" alt="Imagem ilustrativa do Angular">
+            <div class="card">
+                <div class="card__descricao">
+                    <div>
+                        <h3 class="card__descricao__titulo">Autora do Mês</h3>
+                        <h4 class="card__descricao__titulo_descricao">Juliana Agarikov</h4>
+                        <p class="card__descricao__texto">Construindo uma aplicação integrada com a plataforma do
+                            Google.</p>
                     </div>
 
-                    <div class="card_botoes">
-                        <ul class="card_botoes_icones">
-                            <li><img src="img/Favoritos.svg" alt="link de favorito"></li>
-                            <li><img src="img/Compras.svg" alt="link de compra"></li>
-                            <!--tirar a div e usar uma ul e li envolvendo as img-->
-                        </ul>
+                    <img src="img/Perfil-escritora 1.svg" alt="Imagem ilustrativa do Angular">
+                </div>
 
-                        <a class="card_botoao_ancora" href="">
-                            Saiba mais
-                        </a>
+                <div class="card_botoes">
+                    <ul class="card_botoes_icones">
+                        <li><img src="img/Favoritos.svg" alt="link de favorito"></li>
+                        <li><img src="img/Compras.svg" alt="link de compra"></li>
+                        <!--tirar a div e usar uma ul e li envolvendo as img-->
+                    </ul>
 
+                    <a class="card_botoao_ancora" href="">
+                        Saiba mais
+                    </a>
 
-                    </div>
 
                 </div>
 
             </div>
+
+
         </section>
 
         <section class="topicos">
             <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
             <ul class="topicos__lista">
                 <li class="topicos__lista__item"><a class="topicos__lista__item__link" href="">Android</a></li>
-                <li class="topicos__lista__item"><a class="topicos__lista__item__link" href="">Marketing Digital</a></li>
+                <li class="topicos__lista__item"><a class="topicos__lista__item__link" href="">Marketing Digital</a>
+                </li>
                 <li class="topicos__lista__item"><a class="topicos__lista__item__link" href="">Agile</a></li>
                 <li class="topicos__lista__item"><a class="topicos__lista__item__link" href="">Startups</a></li>
                 <li class="topicos__lista__item"><a class="topicos__lista__item__link" href="">HTML & CSS</a></li>
@@ -215,14 +227,15 @@
             <li><img src="img/AluraLingua.svg" alt="alura língua"><a href="">Alura Língua</a></li>
             <li><img src="img/PM3.svg" alt="PM3"><a href="">PM3</a></li>
         </ul>
-        
+
         <ul class="rodape__lista">
             <h2 class="titulo_lista">COMUNIDADE</h2>
             <li><img src="img/HipstersTech.svg" alt="logo Hipsters Ponto tech"><a href="">Hipsters ponto Tech</a></li>
             <li><img src="img/ScubaDev.svg" alt="logo Scuba dev"><a href="">Scuba Dev</a></li>
             <li><img src="img/LayersTech.svg" alt="logo Layers ponto tech"><a href="">Layers ponto Tech</a></li>
             <li><img src="img/LikeABoss.svg" alt="logo like a boss"><a href="">Like a Boss</a></li>
-            <li><img src="img/CarreiraSemFronteira.svg" alt="logo carreira sem fronteiras"><a href="">Carreira sem Fronteira</a></li>
+            <li><img src="img/CarreiraSemFronteira.svg" alt="logo carreira sem fronteiras"><a href="">Carreira sem
+                    Fronteira</a></li>
             <li><img src="img/HipstersJobs.svg" alt="logo Hipsters ponto Jobs"><a href="">Hipsters ponto Jobs</a></li>
             <li><img src="img/GUJ.svg" alt="logo GUJ"><a href="">GUJ</a></li>
         </ul>

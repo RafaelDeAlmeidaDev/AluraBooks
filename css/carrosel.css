@@ -102,6 +102,11 @@
         width: 60%;
     }
 
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+
 
     .card {
         width: 70%;

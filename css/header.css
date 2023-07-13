@@ -75,6 +75,10 @@
     display: none;
 }
 
+.container_link__texto{
+    display: none;
+}
+
 @media (min-width:1024px) {
 
     .cabecalho__menu{
@@ -126,5 +130,34 @@
 
     .menu-opcoes{
         display: none;
+    }
+}
+
+@media (min-width:1728px){
+    .cabecalho__menu{
+        padding: 0 4em;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container_link{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.25em;
+        text-decoration: none;
+        color: var(--cor-preta);
+
+    }
+
+    .container_link__texto{
+        display: block;
+    }
+
+    .opcoes{
+        margin: 0 auto 0 1em;
     }
 }
