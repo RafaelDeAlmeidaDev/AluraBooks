@@ -54,3 +54,9 @@ hr {
         color: var(--cinza-escuro);
     }
 }
+@media (min-width:1728px){
+    .rodape__lista{
+        border-left: 1px solid var(--cinza-escuro);
+        padding-left: 1em;
+    }
+}

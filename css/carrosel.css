@@ -99,7 +99,7 @@
     }
 
     .swiper {
-        width: 60%;
+        width: 70%;
     }
 
     .swiper-button-prev, .swiper-button-next{
@@ -121,4 +121,32 @@
     }
 
 
+}
+
+@media (min-width:1728px){
+    .carrosel__container{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 20vw 3em 20vw;
+        
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 1em;
+    }
+
+    .card{
+        width: 80%;
+        margin-left: 2em;
+    }
+
+    .card__descricao__texto {
+        margin: 0 6em 0 0;
+    }
+
+    .card__descricao__titulo{
+        font-size: 2em;
+    }
 }

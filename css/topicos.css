@@ -39,3 +39,27 @@
         font-size: 1.5em;
     }
 }
+
+@media (min-width:1728px){
+    .topicos{
+        padding: 1em 3em;
+    }
+    .topicos__lista{
+        align-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .topicos__titulo {
+        font-size: 2em;
+    }
+
+    .topicos__lista__item {
+        margin: 3em .5em;
+    }
+
+    .topicos__lista__item__link{
+        font-size: 1.5em;
+        
+    }
+}
